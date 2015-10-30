@@ -1,0 +1,31 @@
+{
+  "name": "smaless",
+  "homepage": "https://github.com/emily123/smaless",
+  "authors": [
+    "emily.liu@trantect.com"
+  ],
+  "description": "",
+  "main": "build",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {},
+  "ignore": [
+    "fonts",
+    "src",
+    "demo",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.coffee",
+    "package.json"
+  ],
+  "_release": "4e5664429b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4e5664429b7daa180768b20cd09e10310f78ad7e"
+  },
+  "_source": "git://github.com/emily123/smaless.git",
+  "_target": "*",
+  "_originalSource": "smaless",
+  "_direct": true
+}

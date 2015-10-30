@@ -2,6 +2,7 @@ node_modules
 .sass-cache
 demo/*.html
 .idea
+bower_components
 demo/scss/*.css
 demo/scss/*.map
 demo/js
