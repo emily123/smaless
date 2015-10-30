@@ -55,6 +55,13 @@ module.exports = (grunt)->
         command: 'sudo gem install sass'
       installJADE:
         command: 'sudo npm install jade -g'
+
+    copy:
+      build:
+#        cwd: 'bower_components'
+        src: ['bower_components/bootstrap/dist/js/bootstrap.js','bower_components/jquery/dist/jquery.js','demo/scss/doc.css','demo/doc.html']
+        dest: 'build'
+        expand: true
   
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -62,12 +69,14 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "cleanLib", ["clean:lib"]
   grunt.registerTask "buildLib", ["cleanLib", "sass:lib"]
   grunt.registerTask "buildDemo", ["sass:demo", "coffee:demo", "jade:demo"]
   grunt.registerTask "default", ["buildLib", "buildDemo"]
+  grunt.registerTask "build",['copy']
 
 
   

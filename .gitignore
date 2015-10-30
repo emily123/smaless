@@ -1,5 +1,8 @@
 node_modules
 .sass-cache
 .idea
+bower_components
+demo/scss/*.css
+demo/*.html
 demo/scss/*.map
 demo/js
