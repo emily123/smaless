@@ -47,7 +47,7 @@ module.exports = (grunt)->
     copy:
       packages:
         cwd: 'demo'
-        src: ['bower_components/*']
+        src: ['bower_components/**/*']
         dest: 'output'
         expand: true
   
