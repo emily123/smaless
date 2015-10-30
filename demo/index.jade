@@ -5,9 +5,7 @@ html(lang='en')
       meta(charset='utf-8')
       meta(name='viewport', content='width=device-width, initial-scale=1')
       link(rel='stylesheet', href='build/main.css')
-      link(rel='stylesheet', href='build/demo/scss/doc.css')
-      script(type='text/javascript' src='build/bower_components/jquery/dist/jquery.js')
-      script(type='text/javascript' src='build/bower_components/bootstrap/dist/js/bootstrap.js')
+      link(rel='stylesheet', href='output/scss/doc.css')
 
    body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
       .container
@@ -27,3 +25,6 @@ html(lang='en')
                   include docSrc/button
                #color
                   include docSrc/color
+      script(type='text/javascript' src='output/bower_components/jquery/dist/jquery.js')
+      script(type='text/javascript' src='output/bower_components/bootstrap/dist/js/bootstrap.js')
+

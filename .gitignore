@@ -1,12 +1,6 @@
 node_modules
 .sass-cache
 .idea
-demo/scss/*.css
-demo/*.html
-demo/scss/*.map
-demo/js
-bower_components
+demo/bower_components
 fonts
-node_modules
-src
 .gitignore
