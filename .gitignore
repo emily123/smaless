@@ -1,6 +1,5 @@
 node_modules
 .sass-cache
 .idea
-demo/scss/*.css
 demo/scss/*.map
 demo/js
