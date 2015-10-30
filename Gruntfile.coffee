@@ -59,7 +59,7 @@ module.exports = (grunt)->
     copy:
       build:
 #        cwd: 'bower_components'
-        src: ['bower_components/bootstrap/dist/js/bootstrap.js','bower_components/jquery/dist/jquery.js','demo/scss/doc.css','demo/doc.html']
+        src: ['bower_components/bootstrap/**/*.js','bower_components/jquery/**/*.js','demo/scss/doc.css','demo/doc.html']
         dest: 'build'
         expand: true
   
