@@ -5,3 +5,8 @@ demo/scss/*.css
 demo/*.html
 demo/scss/*.map
 demo/js
+bower_components
+fonts
+node_modules
+src
+.gitignore
