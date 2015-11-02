@@ -1,0 +1,89 @@
+/*----------------------------*/
+//Variables
+/*----------------------------*/
+
+//== Base Color
+// --------------------------------------------------
+$gray-base:              #282C34 !default;
+$gray-darker:            lighten($gray-base, 10%) !default;
+$gray-dark:              lighten($gray-base, 45%) !default;
+$gray:                   lighten($gray-base, 0%)  !default;
+$gray-light:             lighten($gray-base, 70%) !default; //(for default button )
+$gray-lighter:           lighten($gray-base, 76%) !default;
+
+$color-white: #fff !default;
+$color-black: #000 !default;
+
+$brand-success:     #00c644 !default;
+$brand-complete:    #2979fb !default;
+$brand-primary:     #0189FF !default;
+$brand-warning:     #f0ad4e !default;
+$brand-danger:      #f55753 !default;
+$brand-info:        #33c5df !default;
+$brand-menu:        $gray-base !default;
+
+/* Mixing Color varriable for creating both light and dark colors */
+$mix-percentage-dark:      92% !default;
+$mix-percentage-darker:    75% !default;
+$mix-percentage-light:     80% !default;
+$mix-percentage-lighter:   60% !default;
+$mix-percentage-lightest:  20% !default;
+
+/* Lighter colors */
+$color-success-light:      mix($brand-success, $color-white, $mix-percentage-light) !default;
+$color-success-lighter:    mix($brand-success, $color-white, $mix-percentage-lighter) !default;
+$color-success-lightest:   mix($brand-success, $color-white, $mix-percentage-lightest) !default;
+
+$color-complete-light:     mix($brand-complete, $color-white, $mix-percentage-light) !default;
+$color-complete-lighter:   mix($brand-complete, $color-white, $mix-percentage-lighter) !default;
+$color-complete-lightest:  mix($brand-complete, $color-white, $mix-percentage-lightest) !default;
+
+$color-primary-light:      mix($brand-primary, $color-white, $mix-percentage-light) !default;
+$color-primary-lighter:    mix($brand-primary, $color-white, $mix-percentage-lighter) !default;
+$color-primary-lightest:   mix($brand-primary, $color-white, $mix-percentage-lightest) !default;
+
+$color-warning-light:      mix($brand-warning, $color-white, $mix-percentage-light) !default;
+$color-warning-lighter:    mix($brand-warning, $color-white, $mix-percentage-lighter) !default;
+$color-warning-lightest:   mix($brand-warning, $color-white, $mix-percentage-lightest) !default;
+
+$color-danger-light:       mix($brand-danger, $color-white, $mix-percentage-light) !default;
+$color-danger-lighter:     mix($brand-danger, $color-white, $mix-percentage-lighter) !default;
+$color-danger-lightest:    mix($brand-danger, $color-white, $mix-percentage-lightest) !default;
+
+$color-info-light:         mix($brand-info, $color-white, $mix-percentage-light) !default;
+$color-info-lighter:       mix($brand-info, $color-white, $mix-percentage-lighter) !default;
+$color-info-lightest:      mix($brand-info, $color-white, $mix-percentage-lightest) !default;
+
+/* Darker colors */
+$color-success-dark:       mix($brand-success, $color-black, $mix-percentage-dark) !default;
+$color-success-darker:     mix($brand-success, $color-black, $mix-percentage-darker) !default;
+
+$color-complete-dark:      mix($brand-complete, $color-black, $mix-percentage-dark) !default;
+$color-complete-darker:    mix($brand-complete, $color-black, $mix-percentage-darker) !default;
+
+$color-primary-dark:       mix($brand-primary, $color-black, $mix-percentage-dark) !default;
+$color-primary-darker:     mix($brand-primary, $color-black, $mix-percentage-darker) !default;
+
+$color-warning-dark:       mix($brand-warning, $color-black, $mix-percentage-dark) !default;
+$color-warning-darker:     mix($brand-warning, $color-black, $mix-percentage-darker) !default;
+
+$color-danger-dark:        mix($brand-danger, $color-black, $mix-percentage-dark) !default;
+$color-danger-darker:      mix($brand-danger, $color-black, $mix-percentage-darker) !default;
+
+$color-info-dark:          mix($brand-info, $color-black, $mix-percentage-dark) !default;
+$color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker) !default;
+
+//** Global text color on `<body>`.
+$text-color:            $gray-darker !default;
+
+//== Menu Vars (Sidebar)
+$sidebar-menu-bg :$gray;
+$sidebar-menu-hover: mix($brand-menu, #000, 88%);
+
+/* Generating Menu font color */
+$sidebar-memu-color: $gray-dark;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;

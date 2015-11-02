@@ -1,0 +1,219 @@
+h1 Panels
+.line
+h4.Second Basic panels
+p.content-bg By default, all the .panel does is apply some basic border and padding to contain some content.
+.bs-example
+   .panel.panel-default
+      .panel-body Basic panel example
+.highlight
+   pre
+      code.language-html
+         p  < div class="panel panel-default">
+         p    < div class="panel-body">
+         p      Basic panel example
+         p    < /div>
+         p  < /div>
+
+
+h4.Second Panel with heading
+p.content-bg Easily add a heading container to your panel with
+   span.btn-color .panel-heading
+   |  . You may also include any
+   |  with a
+   span.btn-color .panel-title
+   |  class to add a pre-styled heading.
+   p.content-bg For proper link coloring, be sure to place links in headings within
+   span.btn-color .panel-title.
+.bs-example
+   .panel.panel-default
+      .panel-heading Panel heading without title
+      .panel-body Panel content
+   .panel.panel-default
+      .panel-heading
+         .panel-title Panel title
+      .panel-body Panel content
+.highlight
+   pre
+      code.language-html(data-lang='html')
+         p  < div class="panel panel-default" >
+         p     < div class="panel-heading">Panel heading without title </ div >
+         p        < div class="panel-body" >
+         p           Panel content
+         p        < /div>
+         p     < /div>
+         p  < div class="panel panel-default" >
+         p     < div class="panel-title">Panel title </ div >
+         p        < div class="panel-body" >
+         p           Panel content
+         p     < /div>
+         p  < /div>
+
+h4.Second Panel with footer
+p.content-bg Wrap buttons or secondary text in
+   span.btn-color .panel-footer
+   |  . Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.
+.bs-example
+   .panel.panel-default
+      .panel-body Panel content
+      .panel-footer Panel footer
+.highlight
+   pre
+      code.language-html
+         p  < div class="panel panel-default" >
+         p     < div class="panel-body" >
+         p        Panel content
+         p     < /div>
+         p     < div class="panel-footer">Panel footer </ div>
+         p  < /div>
+
+h4.Second Contextual alternatives
+p.content-bg Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.
+.bs-example
+   .panel.panel-primary
+      .panel-heading
+         .panel-title Panel title
+      .panel-body Panel content
+   .panel.panel-success
+      .panel-heading
+         .panel-title Panel title
+      .panel-body Panel content
+   .panel.panel-info
+      .panel-heading
+         .panel-title Panel title
+      .panel-body Panel content
+   .panel.panel-warning
+      .panel-heading
+         .panel-title Panel title
+      .panel-body Panel content
+   .panel.panel-danger
+      .panel-heading
+         .panel-title Panel title
+      .panel-body Panel content
+.highlight
+   pre
+      code.language-html
+         p < div class="panel panel-primary">...< /div>
+         p < div class="panel panel-success">...< /div>
+         p < div class="panel panel-info">...< /div>
+         p < div class="panel panel-warning">...< /div>
+         p < div class="panel panel-danger">...< /div>
+
+h4.Second With tables
+p.content-bg Add any non-bordered
+   span.btn-color .table
+   | within a panel for a seamless design. If there is a
+   span.btn-color .panel-body
+   | , we add an extra border to the top of the table for separation.
+.bs-example
+   .panel.panel-default
+      .panel-heading Panel heading
+      .panel-body
+         p Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      table.table
+         thead
+            tr
+               th #
+               th First Name
+               th Last Name
+               th Username
+         tbody
+            tr
+               th.row 1
+               td Mark
+               td Otto
+               td @mdo
+            tr
+               th.row 2
+               td Jacob
+               td Thornton
+               td @fat
+            tr
+               th.row 3
+               td Larry
+               td the Bird
+               td @twitter
+.highlight
+   pre
+      code.language-html
+         p  < div class="panel panel-default">
+         p     < !-- Default panel contents -->
+         p     < div class="panel-heading">Panel heading < /div>
+         p     < div class="panel-body" >
+         p        < p>...</ p>
+         p     < /div>
+         p     < !-- Table -->
+         p     < table class="table">
+         p        ...
+         p     < /table >
+         p  < /div>
+p.content-bg If there is no panel body, the component moves from panel header to table without interruption.
+.bs-example
+   .panel.panel-default
+      .panel-heading Panel heading
+      table.table
+         thead
+            tr
+               th #
+               th First Name
+               th Last Name
+               th Username
+         tbody
+            tr
+               th.row 1
+               td Mark
+               td Otto
+               td @mdo
+            tr
+               th.row 2
+               td Jacob
+               td Thornton
+               td @fat
+            tr
+               th.row 3
+               td Larry
+               td the Bird
+               td @twitter
+.highlight
+   pre
+      code.language-html
+         p  < div class="panel panel-default">
+         p     < !-- Default panel contents -->
+         p     < div class="panel-heading">Panel heading < /div>
+         p     < !-- Table -->
+         p     < table class="table">
+         p        ...
+         p     < /table >
+         p  < /div >
+
+
+h4.Second With list groups
+p.content-bg Easily include full-width list groups within any panel.
+.bs-example
+   .panel.panel-default
+      .panel-heading Panel heading
+      .panel-body
+         p Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      ul.list-group
+         li.list-group-item Cras justo odio
+         li.list-group-item Dapibus ac facilisis in
+         li.list-group-item Morbi leo risus
+         li.list-group-item Porta ac consectetur ac
+         li.list-group-item Vestibulum at eros
+.highlight
+   pre
+      code.language-html
+         p  < div class="panel panel-default">
+         p     < !-- Default panel contents -->
+         p     < div class="panel-heading">Panel heading < /div>
+         p     < div class="panel-body">
+         p        < p> ... < /p>
+         p     < /div>
+         p     < !-- List group -->
+         p     < ul class="list-group">
+         p        < li class="list-group-item">Cras justo odio< /li>
+         p        < li class="list-group-item">Dapibus ac facilisis in< /li>
+         p        < li class="list-group-item">Morbi leo risus< /li>
+         p        < li class="list-group-item">Porta ac consectetur ac< /li>
+         p        < li class="list-group-item">Vestibulum at eros< /li>
+         p     < /ul>
+         p  < /div>
