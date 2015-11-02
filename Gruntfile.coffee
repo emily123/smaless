@@ -17,11 +17,7 @@ module.exports = (grunt)->
             expand: true,
             cwd: 'demo',
             src: ['scss/*.scss', '!scss/doc.scss']
-<<<<<<< HEAD
-            dest: 'output/css',
-=======
             dest: 'output',
->>>>>>> 1e9b204ba053096bbc1e174fdb8251b0205d1b73
             ext: '.css'
           }
         ]
@@ -41,10 +37,6 @@ module.exports = (grunt)->
             timestamp: "<%= new Date().getTime() %>"
         files:
           "index.html": "demo/index.jade"
-<<<<<<< HEAD
-          "demo/sma.html": "demo/sma.jade"
-=======
->>>>>>> 1e9b204ba053096bbc1e174fdb8251b0205d1b73
 
     shell:
       installSASS:
@@ -53,11 +45,7 @@ module.exports = (grunt)->
         command: 'sudo npm install jade -g'
 
     copy:
-<<<<<<< HEAD
-      build:
-=======
       packages:
->>>>>>> 1e9b204ba053096bbc1e174fdb8251b0205d1b73
         cwd: 'demo'
         src: ['bower_components/**/*']
         dest: 'output'
@@ -72,13 +60,5 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-<<<<<<< HEAD
-  grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo", "copy:build"]
-  grunt.registerTask "default", ["clean:demo", "build"]
-
-
-  
-=======
   grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo", "copy:packages"]
   grunt.registerTask "default", ["clean:demo", "build"]
->>>>>>> 1e9b204ba053096bbc1e174fdb8251b0205d1b73

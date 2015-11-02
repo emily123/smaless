@@ -108,3 +108,72 @@ p.content-bg Use any the available classes to quickly create a styled button.
 				| Add class by simply typing
 				span.btn-color .btn-default
 
+h4.Second Button size
+.content-div
+	|  Size might vary from smaller to a larger screen.We made few sizes that are pixel perfect and resposive.Fancy larger or smaller bottons?
+	span.btn-color .btn-lg,btn-sm
+	|  ,or
+	span.btn-color .btn-xs
+	|   for additional sizes.
+div
+	.panel.panel-default
+		.panel-body
+			.bs-example.top
+				p
+				button.btn.btn-primary.btn-lg(type="button") Large button
+				button.btn.btn-primary(type="button") Default button
+				button.btn.btn-primary.btn-sm(type="button") Small button
+				button.btn.btn-primary.btn-xs(type="button") Extra small button
+			.col-md-1.side
+				.poem
+					p(style='white-space:pre;')
+						| 1
+						|  2
+						|  3
+						|  4
+						|  5
+						|  6
+						|  7
+						|  8
+						|  9
+						|  10
+						|  11
+						|  12
+			.col-md-11.highlight
+				.poem
+					p(style='white-space:pre;')
+						|  p
+						|  button.btn.btn-primary.btn-lg(type=&quot;button&quot;) Large button
+						| button.btn.btn-default.btn-lg(type=&quot;button&quot;) Large button
+						| p
+						| button.btn.btn-primary(type=&quot;button&quot;) Default button
+						| button.btn.btn-default(type=&quot;button&quot;) Default button
+						| p
+						| button.btn.btn-primary.btn-sm(type=&quot;button&quot;) Small button
+						| button.btn.btn-default.btn-sm(type=&quot;button&quot;) Small button
+						| p
+						| button.btn.btn-primary.btn-xs(type=&quot;button&quot;) Extra small button
+						| button.btn.btn-default.btn-xs(type=&quot;button&quot;) Extra small button
+.content-div
+|  Create block level buttons-those that span the full width of a parent - by adding
+span.btn-color .btn-block
+span .
+div
+	.bs-example.top
+		.well.-align-center
+			button.btn.btn-primary.btn-lg.btn-block Block level button
+	.col-md-1.side
+		p 1
+		p  2
+	.col-md-11.highlight
+		p button.btn.btn-primary.btn-lg.btn-block(type="button") Block level button
+		p button.btn.btn-default.btn-lg.btn-block(type="button") Block level button
+h4.Second disabled state
+.content-div
+	|  Make buttons look unclickable by fading them back with
+	span.btn-color opacity
+	| .Add the
+	span.btn-color .disabled
+	|  attribute to
+	span.btn-color < button >
+	|  buttons.
