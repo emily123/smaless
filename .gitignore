@@ -1,5 +1,9 @@
 node_modules
 .sass-cache
 .idea
+<<<<<<< HEAD
 demo/scss/*.map
+=======
+demo/bower_components
+>>>>>>> 1e9b204ba053096bbc1e174fdb8251b0205d1b73
 fonts
