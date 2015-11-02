@@ -3,31 +3,21 @@ module.exports = (grunt)->
 
     watch:
       scripts:
-        files: ['src/**/*.scss','demo/**/*.jade','demo/scss/*.scss']
+        files: ['demo/**/*.jade','demo/scss/*.scss']
         tasks: ['default']
       options:
         spawn: false
         debounceDelay: 300
     clean:
-      lib: ['build']
+      demo: ['output']
     sass:
-      lib:
-        files: [
-          {
-            expand: true,
-            cwd: 'src',
-            src: ['*.scss']
-            dest: 'build',
-            ext: '.css'
-          }
-        ]
       demo:
         files: [
           {
             expand: true,
             cwd: 'demo',
-            src: ['scss/*.scss']
-            dest: 'demo',
+            src: ['scss/*.scss', '!scss/doc.scss']
+            dest: 'output/css',
             ext: '.css'
           }
         ]
@@ -37,7 +27,7 @@ module.exports = (grunt)->
         expand: true,
         cwd: 'demo/coffee',
         src: ['*.coffee'],
-        dest: 'demo',
+        dest: 'output/js',
         ext: '.js'
 
     jade:
@@ -47,7 +37,7 @@ module.exports = (grunt)->
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
         files:
-          "index.html": "demo/doc.jade"
+          "index.html": "demo/index.jade"
           "demo/sma.html": "demo/sma.jade"
 
     shell:
@@ -58,8 +48,9 @@ module.exports = (grunt)->
 
     copy:
       build:
-        src: ['bower_components/bootstrap/**/*.js','bower_components/jquery/**/*.js','demo/scss/doc.css']
-        dest: 'build'
+        cwd: 'demo'
+        src: ['bower_components/**/*']
+        dest: 'output'
         expand: true
   
   grunt.loadNpmTasks 'grunt-contrib-clean'
@@ -71,11 +62,8 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "cleanLib", ["clean:lib"]
-  grunt.registerTask "buildLib", ["cleanLib", "sass:lib"]
-  grunt.registerTask "buildDemo", ["sass:demo", "coffee:demo", "jade:demo"]
-  grunt.registerTask "default", ["buildLib", "buildDemo"]
-  grunt.registerTask "build",['copy']
+  grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo", "copy:build"]
+  grunt.registerTask "default", ["clean:demo", "build"]
 
 
   
