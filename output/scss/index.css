@@ -687,16 +687,38 @@ p.content-bg {
   border-color: #ebccd1;
   border-top-color: #ebccd1; }
 
+.panel > .list-group {
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 0; }
+
+.panel > .list-group .list-group-item {
+  border-width: 1px 0; }
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+
+ul {
+  display: block;
+  list-style-type: disc; }
+
 table {
-  background-color: transparent; }
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-color: grey; }
 
 th {
   text-align: left; }
 
 .table {
   width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px; }
+  max-width: 100%; }
 
 .table > thead > tr > th,
 .table > tbody > tr > th,
