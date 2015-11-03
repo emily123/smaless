@@ -109,7 +109,7 @@ module.exports = function (grunt) {
         src: [
           'js/transition.js',
           'js/alert.js',
-          'js/button.js',
+          'js/buttons.js',
           'js/carousel.js',
           'js/collapse.js',
           'js/dropdown.js',
@@ -347,7 +347,7 @@ module.exports = function (grunt) {
     htmllint: {
       options: {
         ignore: [
-          'Attribute "autocomplete" not allowed on element "button" at this point.',
+          'Attribute "autocomplete" not allowed on element "buttons" at this point.',
           'Attribute "autocomplete" not allowed on element "input" at this point.',
           'Element "img" is missing required attribute "src".'
         ]

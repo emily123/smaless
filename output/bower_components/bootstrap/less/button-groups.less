@@ -2,7 +2,7 @@
 // Button groups
 // --------------------------------------------------
 
-// Make the div behave like a button
+// Make the div behave like a buttons
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -11,7 +11,7 @@
   > .btn {
     position: relative;
     float: left;
-    // Bring the "active" button to the front
+    // Bring the "active" buttons to the front
     &:hover,
     &:focus,
     &:active,
@@ -31,7 +31,7 @@
   }
 }
 
-// Optional: Group multiple button groups together for a toolbar
+// Optional: Group multiple buttons groups together for a toolbar
 .btn-toolbar {
   margin-left: -5px; // Offset the first child's margin
   &:extend(.clearfix all);
@@ -52,7 +52,7 @@
   border-radius: 0;
 }
 
-// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
+// Set corners individual because sometimes a single buttons can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   margin-left: 0;
   &:not(:last-child):not(.dropdown-toggle) {
@@ -91,14 +91,14 @@
 
 // Sizing
 //
-// Remix the default button sizing classes into new ones for easier manipulation.
+// Remix the default buttons sizing classes into new ones for easier manipulation.
 
 .btn-group-xs > .btn { &:extend(.btn-xs); }
 .btn-group-sm > .btn { &:extend(.btn-sm); }
 .btn-group-lg > .btn { &:extend(.btn-lg); }
 
 
-// Split button dropdowns
+// Split buttons dropdowns
 // ----------------------
 
 // Give the line between buttons some depth
@@ -111,12 +111,12 @@
   padding-right: 12px;
 }
 
-// The clickable button for toggling the menu
+// The clickable buttons for toggling the menu
 // Remove the gradient and set the same inset shadow as the :active state
 .btn-group.open .dropdown-toggle {
   .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
 
-  // Show no shadow for `.btn-link` since it has no other button styles.
+  // Show no shadow for `.btn-link` since it has no other buttons styles.
   &.btn-link {
     .box-shadow(none);
   }
@@ -127,7 +127,7 @@
 .btn .caret {
   margin-left: 0;
 }
-// Carets in other button sizes
+// Carets in other buttons sizes
 .btn-lg .caret {
   border-width: @caret-width-large @caret-width-large 0;
   border-bottom-width: 0;
@@ -138,7 +138,7 @@
 }
 
 
-// Vertical button groups
+// Vertical buttons groups
 // ----------------------
 
 .btn-group-vertical {
@@ -195,7 +195,7 @@
 }
 
 
-// Justified button groups
+// Justified buttons groups
 // ----------------------
 
 .btn-group-justified {

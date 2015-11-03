@@ -10,7 +10,7 @@ define([
  *
  * Attribute not equal selector
  * Positional selectors (:first; :eq(n); :odd; etc.)
- * Type selectors (:input; :checkbox; :button; etc.)
+ * Type selectors (:input; :checkbox; :buttons; etc.)
  * State-based selectors (:animated; :visible; :hidden; etc.)
  * :has(selector)
  * :not(complex selector)
