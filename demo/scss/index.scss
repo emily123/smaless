@@ -175,11 +175,11 @@ p.content-bg {
     float: left;
   }
   .col-md-3 {
-    width: 10%;
+    width: 15%;
     position:fixed;
   }
   .col-md-9 {
-    width: 79%;
+    width: 74%;
     float: right;
   }
   .col-md-4{
@@ -202,16 +202,17 @@ p.content-bg {
 .nav {
   > .active >a {
     border-left: 2px solid $brand-primary;
-    font-weight: bold;
+    font-weight: 700 !important;
     color: $brand-primary;
     padding-left: 12px;
 
     &:hover , &:focus {
-      border-left: 2px solid $brand-primary;
+      border-left: 1px solid $brand-primary;
       padding-left: 12px;
     }
   }
 }
+
 .pills {
   > li > a {
     color: $text-color;
@@ -221,6 +222,35 @@ p.content-bg {
       border-left: 1px solid $brand-primary;
       color: $brand-primary;
       padding-left: 13px;
+    }
+  }
+}
+.childHide{
+  >.active>a{
+    border-left: 2px solid $brand-primary;
+    color: $brand-primary;
+    padding-left: 26px;
+
+    &:hover , &:focus {
+      border-left: 2px solid $brand-primary;
+      padding-left: 26px;
+    }
+  }
+}
+
+.childHide{
+  display: block;
+  list-style: none;
+  padding-bottom: 10px;
+  padding-left: 0px !important;
+  > li >a{
+    padding-left: 28px;
+    color: $text-color;
+    font-weight: 500 !important;
+    &:hover , &:focus {
+      border-left: 1px solid $brand-primary;
+      color: $brand-primary;
+      padding-left: 27px;
     }
   }
 }

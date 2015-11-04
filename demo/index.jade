@@ -14,15 +14,15 @@ html(lang='en')
                ul.nav.pills.stacked
                   li.active
                      a.top(href='#buttons') Buttons
-                     ul.nav
-                        li
+                     ul.childHide
+                        li.active
                            a(href="#button-color") Button color
                         li
-                           a(href="button-size") Button size
+                           a(href="#button-size") Button size
                         li
-                           a(href="disabled-state") Disabled state
+                           a(href="#disabled-state") Disabled state
                         li
-                           a(href="button dropdowns") Button dropdowns
+                           a(href="#button-dropdowns") Button dropdowns
                   li
                      a(href='#color') Color
 
@@ -30,12 +30,21 @@ html(lang='en')
                      a(href='#panels') Panels
 
                   li
-                     a(href="tables") Tables
+                     a(href="#tables") Tables
+                     ul.childHide
+                        li
+                           a(href="#base-tables") Base Tables
+                        li
+                           a(href="#tables-details") Tables details
 
                div.modal-footer
                   a(href='#') Back to top
             .col-md-9
                #buttons
+               #button-color
+               #button-size
+               #disabled-state
+               #button-dropdowns
                   include docSrc/buttons/button
 
                #color
@@ -45,6 +54,8 @@ html(lang='en')
                   include docSrc/panels/panels
 
                #tables
+               #tables-details
+               #base-tables
                   include docSrc/tabels/tables
 
       script(type='text/javascript' src='output/bower_components/jQuery/dist/jquery.js')

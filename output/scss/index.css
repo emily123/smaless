@@ -529,11 +529,11 @@ p.content-bg {
     float: left; }
 
   .col-md-3 {
-    width: 10%;
+    width: 15%;
     position: fixed; }
 
   .col-md-9 {
-    width: 79%;
+    width: 74%;
     float: right; }
 
   .col-md-4 {
@@ -552,12 +552,34 @@ p.content-bg {
 
 .nav > .active > a {
   border-left: 2px solid #0189ff;
-  font-weight: bold;
+  font-weight: 700 !important;
   color: #0189ff;
   padding-left: 12px; }
   .nav > .active > a:hover, .nav > .active > a:focus {
-    border-left: 2px solid #0189ff;
+    border-left: 1px solid #0189ff;
     padding-left: 12px; }
+
+.childHide > .active > a {
+  border-left: 2px solid #0189ff;
+  color: #0189ff;
+  padding-left: 26px; }
+  .childHide > .active > a:hover, .childHide > .active > a:focus {
+    border-left: 2px solid #0189ff;
+    padding-left: 26px; }
+
+.childHide {
+  display: block;
+  list-style: none;
+  padding-bottom: 10px;
+  padding-left: 0px !important; }
+  .childHide > li > a {
+    padding-left: 28px;
+    color: #3e4451;
+    font-weight: 500 !important; }
+    .childHide > li > a:hover, .childHide > li > a:focus {
+      border-left: 1px solid #0189ff;
+      color: #0189ff;
+      padding-left: 27px; }
 
 .pills > li > a {
   color: #3e4451;
