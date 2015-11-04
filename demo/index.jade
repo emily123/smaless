@@ -10,47 +10,61 @@ html(lang='en')
    body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
       .container
          .row
-            nav#myScrollspy.col-md-3
-               ul.nav.pills.stacked
-                  li.active
-                     a.top(href='#buttons') Buttons
-                     ul.childHide
-                        li
-                           a(href='#button-color') Button color
-                        //li
-                        //   a(href='#button-size') Button size
-                        //li
-                        //   a(href='#disabled-state') Disabled state
-                        //li
-                        //   a(href='#button-dropdowns') Button dropdowns
-                  li
-                     a(href='#color') Color
+            .col-md-3
+               nav#myScrollspy
+                  ul.nav.pills.stacked
+                     li.active
+                        a(href='#buttons') Buttons
+                        ul.childHide
+                           li
+                              a(href='#button-color') Button color
+                           li
+                              a(href='#button-size') Button size
+                           li
+                              a(href='#disabled-state') Disabled state
+                           li
+                              a(href='#button-dropdowns') Button dropdowns
+                     li
+                        a(href='#color') Color
 
-                  li
-                     a(href='#panels') Panels
+                     li
+                        a(href='#panels') Panels
+                        ul.childHide
+                           li
+                              a(href="#basic-panels") Basic panels
+                           li
+                              a(href="#panel-heading") Panel with heading
+                           li
+                              a(href="#panel-footer") Panel with footer
+                           li
+                              a(href="#alternatives") Contextual alternatives
+                           li
+                              a(href="#panel-table") With tables
+                           li
+                              a(href="#panel-group") With list groups
 
-                  li
-                     a(href='#tables') Tables
-                     ul.childHide
-                        li
-                           a(href='#base-tables') Base Tables
-                        li
-                           a(href='#tables-details') Tables details
+                     li
+                        a(href='#tables') Tables
+                        ul.childHide
+                           li
+                              a(href='#base-tables') Base Tables
+                           li
+                              a(href='#tables-details') Tables details
 
-               div.modal-footer
-                  a(href='#') Back to top
+                  div.modal-footer
+                     a(href='#') Back to top
             .col-md-9
                #buttons
-                  include docSrc/buttons/button
+                  include docSrc/button
 
                #color
                   include docSrc/color
 
                #panels
-                  include docSrc/panels/panels
+                  include docSrc/panels
 
                #tables
-                  include docSrc/tabels/tables
+                  include docSrc/tables
 
 
 
