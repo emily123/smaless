@@ -3,3 +3,4 @@ node_modules
 .idea
 demo/bower_components
 fonts
+demo/.sma.jade

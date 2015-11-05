@@ -1,0 +1,71 @@
+@import "_variables";
+@mixin disable($leftcolor){
+  border-left: $border-left solid $leftcolor;
+  border-top: 1px solid $border-line-color;
+  border-right: 1px solid $border-line-color;
+  margin-top: $border-left + -10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: $border-left + 30px;
+
+}
+.bg-primary-lighter {@include disable($color-primary-lighter)}
+.bg-success-lighter {@include disable($color-success-lighter)}
+.bg-danger-lighter {@include disable($color-danger-lighter)}
+.bg-warning-lighter {@include disable($color-warning-lighter)}
+.bg-info-lighter {@include disable($color-info-lighter)}
+.bg-default-lighter {@include disable(#fff)}
+
+@mixin normal($leftcolor){
+  border-left: $border-left solid $leftcolor;
+  border-right: 1px solid $border-line-color;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: $border-left + 30px;
+}
+.bg-primary-light {@include normal($color-primary-light)}
+.bg-success-light {@include normal($color-success-light)}
+.bg-danger-light {@include normal($color-danger-light)}
+.bg-warning-light {@include normal($color-warning-light)}
+.bg-info-light {@include normal($color-info-light)}
+.bg-default-light {@include normal(#fafafa)}
+
+@mixin hover($leftcolor) {
+  border-left: $border-left solid $leftcolor;
+  border-right: 1px solid $border-line-color;
+  border-bottom: 1px solid $border-line-color;
+  margin-bottom: $border-left + -10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: $border-left + 30px;
+}
+.bg-primary-dark {@include hover($color-primary-dark)}
+.bg-success-dark {@include hover($color-success-dark)}
+.bg-danger-dark {@include hover($color-danger-dark)}
+.bg-warning-dark {@include hover($color-warning-dark)}
+.bg-info-dark {@include hover($color-info-dark)}
+.bg-default-dark {@include hover(#f4f4f4)}
+
+
+
+p.content-bg {
+  color: #777;
+  font-size: 13px;
+}
+.content-div {
+  color: #777;
+  margin-top: 10px;
+  > .btn-color {
+    color: #fa515b;
+    background-color: #fafafa;
+    padding-left: 2px;
+  }
+}
+.btn {
+  margin-top: 15px;
+}
+
+.side{
+  border-left: 1px solid $border-line-color;
+  border-bottom: 1px solid $border-line-color;
+}
