@@ -553,6 +553,9 @@ p.content-bg {
 #myScrollspy {
   padding-right: 20px; }
 
+.active > ul {
+  display: block !important; }
+
 .nav {
   display: block; }
   .nav > .active > a {
@@ -573,20 +576,20 @@ p.content-bg {
     color: #0189ff;
     padding-left: 13px; }
 
-.childHide > .active > a {
-  border-left: 2px solid #0189ff;
-  color: #0189ff;
-  padding-left: 26px; }
-  .childHide > .active > a:hover, .childHide > .active > a:focus {
-    border-left: 2px solid #0189ff;
-    padding-left: 26px; }
-
 .childHide {
-  display: block;
   list-style: none;
   padding-bottom: 10px;
-  padding-left: 0px !important; }
+  padding-left: 0px !important;
+  display: none; }
+  .childHide > .active > a {
+    border-left: 2px solid #0189ff;
+    color: #0189ff;
+    padding-left: 26px; }
+    .childHide > .active > a:hover, .childHide > .active > a:focus {
+      border-left: 2px solid #0189ff;
+      padding-left: 26px; }
   .childHide > li > a {
+    display: block;
     padding-left: 28px;
     color: #3e4451;
     font-weight: 500 !important; }
@@ -594,12 +597,6 @@ p.content-bg {
       border-left: 1px solid #0189ff;
       color: #0189ff;
       padding-left: 27px; }
-
-.stacked > li {
-  float: none; }
-  .stacked > li + li {
-    margin-top: 2px;
-    margin-left: 0; }
 
 .bs-example {
   position: relative;

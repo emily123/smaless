@@ -201,6 +201,9 @@ p.content-bg {
   padding-right: 20px;
 }
 
+.active > ul {
+  display: block !important;
+}
 .nav {
   display: block;
   > .active >a {
@@ -228,7 +231,12 @@ p.content-bg {
     }
   }
 }
+
 .childHide{
+  list-style: none;
+  padding-bottom: 10px;
+  padding-left: 0px !important;
+  display: none;
   >.active>a{
     border-left: 2px solid $brand-primary;
     color: $brand-primary;
@@ -239,14 +247,8 @@ p.content-bg {
       padding-left: 26px;
     }
   }
-}
-
-.childHide{
-  display: block;
-  list-style: none;
-  padding-bottom: 10px;
-  padding-left: 0px !important;
   > li >a{
+    display: block;
     padding-left: 28px;
     color: $text-color;
     font-weight: 500 !important;
@@ -257,13 +259,7 @@ p.content-bg {
     }
   }
 }
-.stacked > li {
-  float: none;
-  + li {
-    margin-top: 2px;
-    margin-left: 0;
-  }
-}
+
 
 
 //For panels
