@@ -5,11 +5,9 @@ env:
 	rm -rf bower_components
 	bower install
 
-# clear old output files
-clean:
-	rm -rf output
-
 # build output files by grunt
 # you can modify Gruntfile.coffee to change tasks
 build:
+	# clear old output files
+	rm -rf output
 	grunt
