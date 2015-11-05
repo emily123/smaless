@@ -7,11 +7,10 @@ cd smaless
 ```
 ### Step 2
 ```
-npm install
-bower install
+make env
 ```
 
 ### Step 3
 ```
-grunt
+make build
 ```
